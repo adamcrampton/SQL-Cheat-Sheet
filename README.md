@@ -77,7 +77,7 @@ ALTER TABLE table_name
 MODIFY COLUMN column_name *datatype*;
 ```
 
-##### Constraints
+##### Adding Constraints
 **Example using condition check.**
 ```
 ALTER TABLE table_name
@@ -93,16 +93,13 @@ ADD CONSTRAINT constraintname UNIQUE (column_1, column_2, column_3);
 ALTER TABLE table_name
 ADD CONSTRAINT primarykeyname PRIMARY KEY (column_1);
 ```
-```
-ALTER TABLE table_name
-DROP CONSTRAINT constraintname;
-```
+##### Removing Constraints
 ```
 ALTER TABLE table_name
 DROP CONSTRAINT constraintname;
 ```
 
-##### MySQL exceptions
+##### Removing Constraints - MySQL
 **To drop a constraint:**
 ```
 ALTER TABLE table_name
