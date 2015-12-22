@@ -108,6 +108,7 @@ DROP PRIMARY KEY;
 ```
 ---
 ## Aggregate Functions
+### Basic Selects
 ```
 SELECT count(*)
 FROM table_name;
@@ -130,4 +131,25 @@ FROM table_name;
 ```
 SELECT min(column_name)
 FROM table_name;
+```
+### Using GROUP BY
+```
+SELECT column_1, sum(column_2)
+FROM table_name
+GROUP BY column_1
+```
+### Filtering using HAVING
+```
+SELECT column_1, sum(column_2)
+FROM table_name
+GROUP BY column_1
+HAVING count(*) > 1;
+```
+### Using a WHERE clause
+```
+SELECT column_1, sum(column_2)
+FROM table_name
+WHERE column_2 > 10000
+GROUP BY column_1
+HAVING count(*) > 1;
 ```
