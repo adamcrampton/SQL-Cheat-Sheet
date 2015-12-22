@@ -41,13 +41,14 @@ DROP DATABASE db_name;
 ---
 ### Tables
 #### Create
-**Example with PRIMARY KEY, VARCHAR and INT datatypes, and NOT NULL constraint.**
+**Example with PRIMARY KEY, VARCHAR and INT datatypes, NOT NULL and custom named UNIQUE constraint.**
 ```
 CREATE TABLE table_name
 (
 id INT PRIMARY KEY,
 column_name_1 VARCHAR(50) NOT NULL,
 column_name_2 INT,
+CONSTRAINT unique_constraint_name UNIQUE (column_name_2)
 );
 ```
 List of data types: http://www.tutorialspoint.com/sql/sql-data-types.htm
