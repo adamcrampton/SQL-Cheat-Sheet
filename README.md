@@ -50,7 +50,9 @@ column_name_1 VARCHAR(50) NOT NULL,
 column_name_2 INT,
 );
 ```
-Data types: http://www.tutorialspoint.com/sql/sql-data-types.htm
+List of data types: http://www.tutorialspoint.com/sql/sql-data-types.htm
+
+List of constraints: http://www.tutorialspoint.com/sql/sql-constraints.htm
 
 #### Delete
 `DROP TABLE table_name;`
