@@ -57,25 +57,27 @@ List of constraints: http://www.tutorialspoint.com/sql/sql-constraints.htm
 #### Delete
 `DROP TABLE table_name;`
 
-#### Add Column
+#### Altering Tables
+
+##### Add Column
 ```
 ALTER TABLE table_name
 ADD COLUMN column_name *datatype*;
 ```
 
-#### Delete Column
+##### Delete Column
 ```
 ALTER TABLE table_name
 DROP COLUMN column_name;
 ```
 
-#### Modify Datatype
+##### Modify Datatype
 ```
 ALTER TABLE table_name
 MODIFY COLUMN column_name *datatype*;
 ```
 
-#### Constraints
+##### Constraints
 **Example using condition check.**
 ```
 ALTER TABLE table_name
