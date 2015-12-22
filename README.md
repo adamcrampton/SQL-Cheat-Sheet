@@ -9,7 +9,7 @@ INSERT INTO table (column_1, column_2, column_3)
 VALUES (value_1, value_2, value_3);
 ```
 #### Select
-*Example with WHERE and AND condition.*
+**Example with WHERE and AND condition.**
 ```
 SELECT column_1, column_2, column_3
 FROM table_name
@@ -17,7 +17,7 @@ WHERE *condition*
 AND *condition*;
 ```
 #### Update
-*Example with WHERE and OR condition.*
+**Example with WHERE and OR condition.**
 ```
 UPDATE table_name
 SET column_1 = value_1, column_2 = value_2
@@ -26,19 +26,22 @@ OR *condition*;
 ```
 
 #### Delete
-*Example with WHERE condition.*
+**Example with WHERE condition.**
 ```
 DELETE FROM table_name
 WHERE *condition*;
 ```
 ---
 ### Databases
-`CREATE DATABASE db_name;`
-`DROP DATABASE db_name;`
+```
+CREATE DATABASE db_name;
+
+DROP DATABASE db_name;
+```
 ---
 ### Tables
 #### Create
-*Example with PRIMARY KEY, VARCHAR and INT datatypes, and NOT NULL constraint.*
+**Example with PRIMARY KEY, VARCHAR and INT datatypes, and NOT NULL constraint.**
 ```
 CREATE TABLE table_name
 (
@@ -71,17 +74,18 @@ MODIFY COLUMN column_name datatype;
 ```
 
 #### Constraints
+**Example using condition check.**
 ```
 ALTER TABLE table_name
-ADD CONSTRAINT constraintname CHECK (CONDITION);
+ADD CONSTRAINT constraintname CHECK column_1 < 50;
 ```
+**Example with UNIQUE value constraint**
 ```
-*Example with UNIQUE value constraint*
 ALTER TABLE table_name
 ADD CONSTRAINT constraintname UNIQUE (column_1, column_2, column_3);
 ```
+**Example with PRIMARY KEY constraint**
 ```
-*Example with PRIMARY KEY constraint*
 ALTER TABLE table_name
 ADD CONSTRAINT primarykeyname PRIMARY KEY (column_1);
 ```
@@ -113,7 +117,7 @@ DROP PRIMARY KEY;
 SELECT count(*)
 FROM table_name;
 ```
-*Note:* If you specify a column name instead of (*), the number returned is the amount of rows that do not contain a NULL value.
+**Note:** If you specify a column name instead of (*), the number returned is the amount of rows that do not contain a NULL value.
 
 For columns containing numbers:
 ```
