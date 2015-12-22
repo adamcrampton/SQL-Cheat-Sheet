@@ -6,20 +6,18 @@ A super simple SQL cheatsheet.
 #### Insert
 ```
 INSERT INTO table (column_1, column_2, column_3)
-VALUES (value_1, value_2, value_3)
-WHERE *condition*;
+VALUES (value_1, value_2, value_3);
 ```
-
-
 #### Select
+*Example with WHERE and AND condition.*
 ```
 SELECT column_1, column_2, column_3
 FROM table_name
 WHERE *condition*
 AND *condition*;
 ```
-
 #### Update
+*Example with WHERE and OR condition.*
 ```
 UPDATE table_name
 SET column_1 = value_1, column_2 = value_2
@@ -28,25 +26,25 @@ OR *condition*;
 ```
 
 #### Delete
+*Example with WHERE condition.*
 ```
 DELETE FROM table_name
 WHERE *condition*;
 ```
 ---
 ### Databases
-```
-CREATE DATABASE db_name;
-DROP DATABASE db_name;
-```
+`CREATE DATABASE db_name;`
+`DROP DATABASE db_name;`
 ---
 ### Tables
 #### Create
+*Example with PRIMARY KEY, VARCHAR and INT datatypes, and NOT NULL constraint.*
 ```
 CREATE TABLE table_name
 (
 id INT PRIMARY KEY,
-some_data VARCHAR(50),
-column_name3 DATATYPE,
+column_name_1 VARCHAR(50) NOT NULL,
+column_name_2 INT,
 );
 ```
 Data types: http://www.tutorialspoint.com/sql/sql-data-types.htm
@@ -78,10 +76,12 @@ ALTER TABLE table_name
 ADD CONSTRAINT constraintname CHECK (CONDITION);
 ```
 ```
+*Example with UNIQUE value constraint*
 ALTER TABLE table_name
 ADD CONSTRAINT constraintname UNIQUE (column_1, column_2, column_3);
 ```
 ```
+*Example with PRIMARY KEY constraint*
 ALTER TABLE table_name
 ADD CONSTRAINT primarykeyname PRIMARY KEY (column_1);
 ```
