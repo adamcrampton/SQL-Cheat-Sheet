@@ -106,3 +106,28 @@ DROP INDEX constraintname;
 ALTER TABLE table_name
 DROP PRIMARY KEY;
 ```
+---
+## Aggregate Functions
+```
+SELECT count(*)
+FROM table_name;
+```
+*Note:* If you specify a column name instead of (*), the number returned is the amount of rows that do not contain a NULL value.
+
+For columns containing numbers:
+```
+SELECT sum(column_name)
+FROM table_name;
+```
+```
+SELECT avg(column_name)
+FROM table_name;
+```
+```
+SELECT max(column_name)
+FROM table_name;
+```
+```
+SELECT min(column_name)
+FROM table_name;
+```
