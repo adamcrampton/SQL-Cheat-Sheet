@@ -58,7 +58,7 @@ Data types: http://www.tutorialspoint.com/sql/sql-data-types.htm
 #### Add Column
 ```
 ALTER TABLE table_name
-ADD COLUMN column_name datatype;
+ADD COLUMN column_name *datatype*;
 ```
 
 #### Delete Column
@@ -70,7 +70,7 @@ DROP COLUMN column_name;
 #### Modify Datatype
 ```
 ALTER TABLE table_name
-MODIFY COLUMN column_name datatype;
+MODIFY COLUMN column_name *datatype*;
 ```
 
 #### Constraints
