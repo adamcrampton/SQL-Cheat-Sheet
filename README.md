@@ -119,7 +119,7 @@ DROP PRIMARY KEY;
 SELECT count(*)
 FROM table_name;
 ```
-**Note:** If you specify a column name instead of (*), the number returned is the amount of rows that do not contain a NULL value. Using (*) will return the amount of rows including those with a NULL value.
+**Note:** If you specify a column name instead of (\*), the number returned is the amount of rows that do not contain a NULL value. Using (\*) will return the amount of rows including those with a NULL value.
 
 For columns containing numbers:
 ```
